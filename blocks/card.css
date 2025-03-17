@@ -31,6 +31,11 @@
   background-color: #fcf5e5;
 }
 
+.card__like-button:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
 .card__title {
   margin: 0;
   flex-grow: 1;
@@ -48,5 +53,9 @@
 @media screen and (max-width: 627px) {
   .card__title {
     max-width: 235px;
+  }
+
+  .card__image {
+    max-height: 288px;
   }
 }

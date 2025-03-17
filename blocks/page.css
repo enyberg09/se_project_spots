@@ -18,3 +18,9 @@
 .profile__add-btn {
   margin-left: auto;
 }
+
+@media screen and (max-width: 627px) {
+  .page__section {
+    max-width: 288px;
+  }
+}
