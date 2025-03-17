@@ -51,7 +51,9 @@ In this portion of my project, I have implemented media queries to help the disp
 ![New Post Button Before](./images/new-post-hover-before.png)
 ![New Post Button After](./images/new-post-hover-after.png)
 
-_/I will add the video after my first submission, just in case there are any corrections I need to make/_
+## Video Description
+
+- [Video Link](https://drive.google.com/file/d/1dnk40vhYClGCO5M5jkFtvc-Ow_wOGXEx/view?usp=sharing)
 
 - [Link to the project on Figma](https://www.figma.com/file/BBNm2bC3lj8QQMHlnqRsga/Sprint-3-Project-%E2%80%94-Spots?type=design&node-id=2%3A60&mode=design&t=afgNFybdorZO6cQo-1)
 
