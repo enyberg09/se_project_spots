@@ -24,15 +24,19 @@
 }
 
 .card__like-button {
-  background-image: url(../images/heart.svg);
+  background-image: url(../images/like-icon-dark.svg);
   height: 20px;
   width: 23px;
   border: none;
   background-color: #fcf5e5;
+  opacity: 0.4;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .card__like-button:hover {
-  opacity: 0.6;
+  opacity: 1;
   cursor: pointer;
 }
 
@@ -53,9 +57,15 @@
 @media screen and (max-width: 627px) {
   .card__title {
     max-width: 235px;
+    font-size: 16px;
   }
 
   .card__image {
     max-height: 288px;
+  }
+
+  .card__like-button {
+    width: 20px;
+    height: 18px;
   }
 }

@@ -3,17 +3,11 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 1;
-  margin: 668px 60px;
+  padding: 60px 0;
   opacity: 70%;
 }
 .footer__content {
   display: flex;
   justify-content: center;
-  padding-bottom: 60px;
-}
-
-@media screen and (max-width: 627px) {
-  .footer {
-    max-width: 235px;
-  }
+  margin: 0 auto;
 }
