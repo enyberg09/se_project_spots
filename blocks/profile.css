@@ -68,7 +68,7 @@
   cursor: pointer;
 }
 
-.profile__add-btn {
+.profile__new-post-btn {
   margin-top: auto;
   align-self: flex-start;
   height: 52px;
@@ -83,7 +83,7 @@
   color: #fcf5e5;
 }
 
-.profile__add-btn:hover {
+.profile__new-post-btn:hover {
   opacity: 0.8;
   cursor: pointer;
 }
@@ -110,7 +110,7 @@
     max-width: 288px;
   }
 
-  .profile__add-btn {
+  .profile__new-post-btn {
     margin: 0;
     align-self: center;
     width: 100%;
