@@ -40,21 +40,6 @@ In the next portion of my project, I implemented JavaScript. By using Javascript
 ![Mobile Screenshot](./images/mobile-view1.png)
 ![Mobile Screenshot](./images/mobile-view2.png)
 
-### Edit Profile Button - Before and After
-
-![Edit Profile Button Before](./images/edit-profile-hover-before.png)
-![Edit Profile Button After](./images/edit-profile-hover-after.png)
-
-### Like Button - Before and After
-
-![Like Button Before](./images/like-button-hover-before.png)
-![Like Button After](./images/like-button-hover-after.png)
-
-### New Post Button - Before and After
-
-![New Post Button Before](./images/new-post-hover-before.png)
-![New Post Button After](./images/new-post-hover-after.png)
-
 ### Edit Profile with Current Info - Before and After
 
 ![Edit Profile Before](./images/edit-profile-info-before.jpg)
@@ -68,7 +53,7 @@ In the next portion of my project, I implemented JavaScript. By using Javascript
 ![New Post After](./images/new-post-after.jpg)
 ![New Post Before Like Button](./images/new-post-after-like-button.jpg)
 
-### Spots Functionality Demo -
+### Spots Functionality Demo
 
 - [Spots Demo](https://photos.app.goo.gl/DB8qWWZDLHhs3dsn9)
 
