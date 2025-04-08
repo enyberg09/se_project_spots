@@ -37,6 +37,10 @@
   cursor: pointer;
 }
 
+.card__like-button_active {
+  opacity: 1;
+}
+
 .card__title {
   margin: 0;
   flex-grow: 1;

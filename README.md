@@ -18,12 +18,16 @@ The main goal of this project is to ensure that all elements of the design displ
 
 ## Tech Stack
 
-In this portion of my project, I have implemented media queries to help the display be compatible with desktop view and mobile views. Here are the technologies used:
+In the initial portion of my project, I implemented media queries to help the display be compatible with desktop view and mobile views. Here are the technologies used:
 
 - **HTML**: Structure of the content
 - **CSS**: Styling the layout and components
 - **Responsive Design**: Ensuring the design is mobile-first and adapts to different screen sizes
 - **BEM**: Using Block-Element-Modifier methodology for better CSS organization and maintainability
+
+In the next portion of my project, I implemented JavaScript. By using Javascript, I was able to make the page even more interactive.
+
+- **JavaScript**: Improve interactivity of the page. The edit modal is now opened when clicked. The form is pre-filled with curent profile information. New profile information is saved when submitted. New posts can be created and added to the page without refreshing. New content is structured properly with all necessary elements.
 
 ## Screenshots
 
@@ -51,9 +55,26 @@ In this portion of my project, I have implemented media queries to help the disp
 ![New Post Button Before](./images/new-post-hover-before.png)
 ![New Post Button After](./images/new-post-hover-after.png)
 
+### Edit Profile with Current Info - Before and After
+
+![Edit Profile Before](./images/edit-profile-info-before.png)
+![Edit Profile After](./images/edit-profile-info-after.png)
+![Edit Profile Updated](./images/edit-profile-updated.png)
+
+### New Post with Iamge - Before, During, and After
+
+![New Post Before](./images/new-post-before.png)
+![New Post During](./images/new-post-during.png)
+![New Post After](./images/new-post-after.png)
+![New Post Before Like Button](./images/new-post-after-like-button.png)
+
+### Spots Functionality Demo -
+
+- [Spots Demo](https://photos.app.goo.gl/DB8qWWZDLHhs3dsn9)
+
 ## Video Description
 
-- [Video Link](https://drive.google.com/file/d/1dnk40vhYClGCO5M5jkFtvc-Ow_wOGXEx/view?usp=sharing)
+- [Video Description Link](https://drive.google.com/file/d/1dnk40vhYClGCO5M5jkFtvc-Ow_wOGXEx/view?usp=sharing)
 
 - [Link to the project on Figma](https://www.figma.com/file/BBNm2bC3lj8QQMHlnqRsga/Sprint-3-Project-%E2%80%94-Spots?type=design&node-id=2%3A60&mode=design&t=afgNFybdorZO6cQo-1)
 
