@@ -33,12 +33,11 @@ In the next portion of my project, I implemented JavaScript. By using Javascript
 
 ### Desktop View (1440px)
 
-![Desktop Screenshot](./images/desktop-view.png)
+![Desktop Screenshot](./images/desktop-view.jpg)
 
 ### Mobile View (627px)
 
-![Mobile Screenshot](./images/mobile-view1.png)
-![Mobile Screenshot](./images/mobile-view2.png)
+![Mobile Screenshot](./images/mobile-view1.jpg)
 
 ### Edit Profile with Current Info - Before and After
 
