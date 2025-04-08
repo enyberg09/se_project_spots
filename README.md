@@ -57,16 +57,16 @@ In the next portion of my project, I implemented JavaScript. By using Javascript
 
 ### Edit Profile with Current Info - Before and After
 
-![Edit Profile Before](./images/edit-profile-info-before.png)
-![Edit Profile After](./images/edit-profile-info-after.png)
-![Edit Profile Updated](./images/edit-profile-updated.png)
+![Edit Profile Before](./images/edit-profile-info-before.jpg)
+![Edit Profile After](./images/edit-profile-info-after.jpg)
+![Edit Profile Updated](./images/edit-profile-updated.jpg)
 
 ### New Post with Iamge - Before, During, and After
 
-![New Post Before](./images/new-post-before.png)
-![New Post During](./images/new-post-during.png)
-![New Post After](./images/new-post-after.png)
-![New Post Before Like Button](./images/new-post-after-like-button.png)
+![New Post Before](./images/new-post-before.jpg)
+![New Post During](./images/new-post-during.jpg)
+![New Post After](./images/new-post-after.jpg)
+![New Post Before Like Button](./images/new-post-after-like-button.jpg)
 
 ### Spots Functionality Demo -
 
