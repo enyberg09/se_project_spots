@@ -43,6 +43,7 @@ const editProfileDescriptionInput = editProfileModal.querySelector(
 );
 
 const previewModal = document.querySelector("#preview-modal");
+
 const previewModalCloseBtn = previewModal.querySelector(".modal__close-btn");
 const previewImageEl = previewModal.querySelector(".modal__image");
 const previewCaptionEl = previewModal.querySelector(".modal__caption");
@@ -90,6 +91,15 @@ function closeModal(modal) {
   modal.classList.remove("modal_is-opened");
 }
 
+function escKeyPress(event) {
+  if (event.key === "Escape") {
+    const openedModal = document.querySelector(".modal_is-opened");
+    if (openedModal) {
+      closeModal(openedModal);
+    }
+  }
+}
+
 const closeButtons = document.querySelectorAll(".modal__close-btn");
 
 closeButtons.forEach((button) => {
@@ -97,8 +107,11 @@ closeButtons.forEach((button) => {
   button.addEventListener("click", () => closeModal(popup));
 });
 
+document.addEventListener("keydown", escKeyPress);
+
 const newPostBtn = document.querySelector(".profile__new-post-btn");
 const newPostModal = document.querySelector("#new-post-modal");
+const cardSubmitBtn = newPostModal.querySelector(".modal__submit-btn");
 const newPostForm = newPostModal.querySelector(".modal__form");
 const newPostInput = newPostModal.querySelector("#card-image-input");
 const newPostCaptionInput = newPostModal.querySelector("#caption-input");
@@ -109,10 +122,16 @@ const profileDescriptionEl = document.querySelector(".profile__description");
 editProfileBtn.addEventListener("click", function () {
   editProfileNameInput.value = profileNameEl.textContent;
   editProfileDescriptionInput.value = profileDescriptionEl.textContent;
+  resetValidation(editProfileForm, [
+    editProfileNameInput,
+    editProfileDescriptionInput,
+  ]);
   openModal(editProfileModal);
 });
 
 newPostBtn.addEventListener("click", function () {
+  newPostForm.reset();
+  resetValidation(newPostForm, [newPostInput, newPostCaptionInput]);
   openModal(newPostModal);
 });
 
@@ -127,7 +146,6 @@ editProfileForm.addEventListener("submit", handleEditProfileSubmit);
 
 function handleNewPostSubmit(evt) {
   evt.preventDefault();
-
   const inputValues = {
     link: newPostInput.value,
     name: newPostCaptionInput.value,
@@ -136,7 +154,7 @@ function handleNewPostSubmit(evt) {
   const cardElement = getCardElement(inputValues);
 
   cardList.prepend(cardElement);
-
+  disableButton(cardSubmitBtn);
   closeModal(newPostModal);
   newPostForm.reset();
 }
