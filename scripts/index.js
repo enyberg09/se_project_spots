@@ -85,17 +85,20 @@ function getCardElement(data) {
 
 function openModal(modal) {
   modal.classList.add("modal_is-opened");
+  document.addEventListener("keydown", pressEscKey);
 }
 
 function closeModal(modal) {
   modal.classList.remove("modal_is-opened");
+  document.removeEventListener("keydown", pressEscKey);
 }
 
-function escKeyPress(event) {
+function pressEscKey(event) {
   if (event.key === "Escape") {
     const openedModal = document.querySelector(".modal_is-opened");
     if (openedModal) {
       closeModal(openedModal);
+      document.removeEventListener("keydown", pressEscKey);
     }
   }
 }
@@ -106,8 +109,6 @@ closeButtons.forEach((button) => {
   const popup = button.closest(".modal");
   button.addEventListener("click", () => closeModal(popup));
 });
-
-document.addEventListener("keydown", escKeyPress);
 
 const newPostBtn = document.querySelector(".profile__new-post-btn");
 const newPostModal = document.querySelector("#new-post-modal");
@@ -122,16 +123,10 @@ const profileDescriptionEl = document.querySelector(".profile__description");
 editProfileBtn.addEventListener("click", function () {
   editProfileNameInput.value = profileNameEl.textContent;
   editProfileDescriptionInput.value = profileDescriptionEl.textContent;
-  resetValidation(editProfileForm, [
-    editProfileNameInput,
-    editProfileDescriptionInput,
-  ]);
   openModal(editProfileModal);
 });
 
 newPostBtn.addEventListener("click", function () {
-  newPostForm.reset();
-  resetValidation(newPostForm, [newPostInput, newPostCaptionInput]);
   openModal(newPostModal);
 });
 
@@ -144,24 +139,25 @@ function handleEditProfileSubmit(evt) {
 
 editProfileForm.addEventListener("submit", handleEditProfileSubmit);
 
+function renderCard(item, method = "prepend") {
+  const cardElement = getCardElement(item);
+
+  cardList[method](cardElement);
+}
+
+initialCards.forEach((cardData) => {
+  renderCard(cardData, "append");
+});
+
 function handleNewPostSubmit(evt) {
   evt.preventDefault();
   const inputValues = {
     link: newPostInput.value,
     name: newPostCaptionInput.value,
   };
-
-  const cardElement = getCardElement(inputValues);
-
-  cardList.prepend(cardElement);
-  disableButton(cardSubmitBtn);
+  renderCard(inputValues, "prepend");
   closeModal(newPostModal);
   newPostForm.reset();
 }
 
 newPostForm.addEventListener("submit", handleNewPostSubmit);
-
-initialCards.forEach(function (item) {
-  const cardElement = getCardElement(item);
-  cardList.append(cardElement);
-});
