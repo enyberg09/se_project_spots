@@ -121,6 +121,11 @@ const profileNameEl = document.querySelector(".profile__name");
 const profileDescriptionEl = document.querySelector(".profile__description");
 
 editProfileBtn.addEventListener("click", function () {
+  resetValidation(
+    editProfileForm,
+    [editProfileNameInput, editProfileDescriptionInput],
+    settings
+  );
   editProfileNameInput.value = profileNameEl.textContent;
   editProfileDescriptionInput.value = profileDescriptionEl.textContent;
   openModal(editProfileModal);
@@ -151,13 +156,17 @@ initialCards.forEach((cardData) => {
 
 function handleNewPostSubmit(evt) {
   evt.preventDefault();
+  const submitButton = evt.submitter;
+
   const inputValues = {
     link: newPostInput.value,
     name: newPostCaptionInput.value,
   };
   renderCard(inputValues, "prepend");
+  submitButton.disabled = true;
   closeModal(newPostModal);
   newPostForm.reset();
+  submitButton.disabled = false;
 }
 
 newPostForm.addEventListener("submit", handleNewPostSubmit);
