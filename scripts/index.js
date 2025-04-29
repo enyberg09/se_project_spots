@@ -157,6 +157,7 @@ initialCards.forEach((cardData) => {
 function handleNewPostSubmit(evt) {
   evt.preventDefault();
   const submitButton = evt.submitter;
+  disableButton(submitButton, settings);
 
   const inputValues = {
     link: newPostInput.value,
@@ -165,7 +166,6 @@ function handleNewPostSubmit(evt) {
   renderCard(inputValues, "prepend");
   closeModal(newPostModal);
   newPostForm.reset();
-  disableButton(submitButton, settings);
 }
 
 newPostForm.addEventListener("submit", handleNewPostSubmit);
