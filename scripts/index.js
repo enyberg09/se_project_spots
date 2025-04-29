@@ -157,16 +157,15 @@ initialCards.forEach((cardData) => {
 function handleNewPostSubmit(evt) {
   evt.preventDefault();
   const submitButton = evt.submitter;
+  disableButton(submitButton, settings);
 
   const inputValues = {
     link: newPostInput.value,
     name: newPostCaptionInput.value,
   };
   renderCard(inputValues, "prepend");
-  submitButton.disabled = true;
   closeModal(newPostModal);
   newPostForm.reset();
-  submitButton.disabled = false;
 }
 
 newPostForm.addEventListener("submit", handleNewPostSubmit);
