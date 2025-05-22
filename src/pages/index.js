@@ -1,3 +1,25 @@
+import "./index.css";
+import logoImage from "../images/logo.svg";
+import avatarImage from "../images/avatar.jpg";
+import pencilImage from "../images/pencil.svg";
+import plusImage from "../images/plus.svg";
+import {
+  enableValidation,
+  settings,
+  disableButton,
+  resetValidation,
+} from "../scripts/validation.js";
+
+const headerLogo = document.querySelector(".header__logo");
+const profileAvatar = document.querySelector(".profile__avatar");
+const editProfileIcon = document.querySelector(".profile__edit-btn img");
+const newPostIcon = document.querySelector(".profile__new-post-btn img");
+
+headerLogo.src = logoImage;
+profileAvatar.src = avatarImage;
+editProfileIcon.src = pencilImage;
+newPostIcon.src = plusImage;
+
 const initialCards = [
   {
     name: "Golden Gate Bridge",
@@ -169,3 +191,5 @@ function handleNewPostSubmit(evt) {
 }
 
 newPostForm.addEventListener("submit", handleNewPostSubmit);
+
+enableValidation(settings);
