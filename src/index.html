@@ -12,35 +12,34 @@
   <body>
     <div class="page">
       <header class="header">
-        <img src="" alt="Spots logo" class="header__logo" />
+        <img id="logo" class="header__logo" alt="Spots logo" />
       </header>
       <main class="content">
         <section class="profile page__section">
-          <img src="" alt="Bessie Coleman" class="profile__avatar" />
+          <img class="profile__avatar" alt="Bessie Coleman" />
           <div class="profile__column">
             <h1 class="profile__name">Bessie Coleman</h1>
             <p class="profile__description">Civil Aviator</p>
             <button type="button" class="profile__edit-btn">
-              <img src="" alt="Pencil icon" />Edit Profile
+              <img alt="Pencil icon" />Edit Profile
             </button>
           </div>
           <button type="button" class="profile__new-post-btn">
-            <img src="" alt="Plus icon" />New Post
+            <img alt="Plus icon" />New Post
           </button>
         </section>
         <section class="cards page__section">
-          <ul class="cards__list">
-            <template id="card-template">
-              <li class="card">
-                <button class="card__delete-button" type="button"></button>
-                <img src="#" alt="" class="card__image" />
-                <div class="card__content">
-                  <h2 class="card__title"></h2>
-                  <button type="button" class="card__like-button"></button>
-                </div>
-              </li>
-            </template>
-          </ul>
+          <ul class="cards__list"></ul>
+          <template id="card-template">
+            <li class="card">
+              <button class="card__delete-button" type="button"></button>
+              <img alt="" class="card__image" />
+              <div class="card__content">
+                <h2 class="card__title"></h2>
+                <button type="button" class="card__like-button"></button>
+              </div>
+            </li>
+          </template>
         </section>
       </main>
       <footer class="footer">
@@ -124,7 +123,7 @@
           type="button"
           class="modal__close-btn modal__close-btn_type_preview"
         ></button>
-        <img src="#" alt="" class="modal__image" />
+        <img alt="" class="modal__image" />
         <p class="modal__caption"></p>
       </div>
     </div>
