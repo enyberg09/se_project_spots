@@ -120,7 +120,6 @@ function pressEscKey(event) {
     const openedModal = document.querySelector(".modal_is-opened");
     if (openedModal) {
       closeModal(openedModal);
-      document.removeEventListener("keydown", pressEscKey);
     }
   }
 }
