@@ -72,6 +72,12 @@
   justify-content: center;
 }
 
+#delete-form {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
 .modal__close-btn {
   position: absolute;
   top: 32px;
@@ -106,6 +112,7 @@
   font-weight: 500;
   font-size: 32px;
   line-height: 1;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
 
 .modal__label {
@@ -113,6 +120,7 @@
   flex-direction: column;
   gap: 8px;
   margin-bottom: 32px;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
 
 .modal__input {
@@ -145,10 +153,73 @@
 .modal__error {
   display: block;
   color: red;
-  /*TO DO, USE CORRENT COLOR AND FONT SIZES */
 }
 
 .modal__submit-btn {
+  width: 156px;
+  padding: 18px 0;
+  background: #ff6565;
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  border-radius: 8px;
+  color: #212121;
+  cursor: pointer;
+  border: none;
+  transition: opacity 0.3s ease;
+}
+
+.modal__submit-btn:hover {
+  background-color: #ff3333;
+  color: #212121;
+}
+
+.modal__submit-btn_disabled {
+  background-color: #212121;
+  color: #ffffff;
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.modal__submit-btn_disabled:hover {
+  opacity: 0.5;
+}
+
+.modal__cancel-btn {
+  width: 156px;
+  padding: 18px 0;
+  background: white;
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  border-radius: 8px;
+  color: #212121;
+  cursor: pointer;
+  border: 1.5px solid #212121;
+  transition: opacity 0.3s ease;
+}
+
+.modal__cancel-btn:hover {
+  background: #212121;
+  color: #ffffff;
+}
+
+.modal__cancel-btn_disabled {
+  background-color: #212121;
+  color: #ffffff;
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.modal__cancel-btn_disabled:hover {
+  opacity: 0.5;
+}
+
+.modal__save-btn {
   width: 156px;
   padding: 18px 0;
   background: #212121;
@@ -162,21 +233,6 @@
   cursor: pointer;
   border: none;
   transition: opacity 0.3s ease;
-}
-
-.modal__submit-btn:hover {
-  opacity: 0.8;
-}
-
-.modal__submit-btn_disabled {
-  background-color: #212121;
-  color: #ffffff;
-  opacity: 0.5;
-  cursor: not-allowed;
-}
-
-.modal__submit-btn_disabled:hover {
-  opacity: 0.5;
 }
 
 @media screen and (max-width: 627px) {
