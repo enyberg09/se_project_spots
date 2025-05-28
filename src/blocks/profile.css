@@ -61,6 +61,7 @@
 
 .profile__description {
   margin: 0;
+  padding-bottom: 2px;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -72,7 +73,6 @@
   text-overflow: ellipsis;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
-  max-width: 420px;
 }
 
 .profile__column {
@@ -144,8 +144,6 @@
     content: "";
   }
 
-  /* TO DO finish mobile avator button styles*/
-
   .profile__avatar {
     margin-right: 0;
     width: 80px;
@@ -181,5 +179,31 @@
   .profile__description {
     margin: 0 0 32px;
     max-width: 288px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .profile__description {
+    padding-bottom: 2px;
+  }
+
+  .profile__avatar-btn {
+    background-color: #21212199;
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    top: 52px;
+    left: 52px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  .profile__pencil-icon {
+    width: 16px;
+    height: 16px;
+    display: block;
   }
 }
