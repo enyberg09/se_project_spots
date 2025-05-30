@@ -1,74 +1,64 @@
-# Spots
+# 📍 Spots
 
-## Description
+## 📝 Project Overview
 
-I have finished my third project with TripleTen. This project is called Spots. Spots is a responsive social media web application where users can add and remove photos, like photos, and make profile adjustments
+**Spots** is a responsive social media web application that allows users to create, like, and delete photo posts, as well as update their profiles. This project challenged me to translate a Figma design into code without a full written brief—strengthening my ability to interpret UI specs visually and implement them in a functional, accessible interface.
 
-With this project, I was introduced to working with Figma rather than a full brief that gives detailed specifications. I enjoyed the challenge of finding the necessary specifications to recreate the design and how to translate that to code.
+## 🎯 Project Goals
 
-## Project Goal
+- Ensure the design is fully responsive and functional across desktop and mobile devices.
+- Implement core social media features including posting, editing profiles, and liking photos.
+- Prepare for future enhancements including tablet optimization and cross-browser compatibility.
 
-The main goal of this project is to ensure that all elements of the design display correctly across popular screen sizes, such as desktop and mobile. Moving forward, I will be fine-tuning the design to ensure it’s also compatible with tablet devices.
+## 🌟 Key Features
 
-## Project Features
+- Responsive layout (mobile-first, desktop-optimized)
+- Grid-based card layout for photo posts
+- Profile management (edit avatar, name, and description)
+- Add and delete photos
+- Like/unlike photo posts
+- Real-time updates and feedback
+- RESTful API integration
 
-- Responsive layout that adapts to different screen sizes (desktop and mobile)
-- Grid-based photo card layout
-- Custom fonts implementation
+## 🛠️ Tech Stack
 
-## Tech Stack
+### 🧱 Frontend Technologies
 
-In the initial portion of my project, I implemented media queries to help the display be compatible with desktop view and mobile views. Here are the technologies used:
+- **HTML5** – Semantic structure for content
+- **CSS3** – Layout and styles using:
 
-- **HTML**: Structure of the content
-- **CSS**: Styling the layout and components
-- **Responsive Design**: Ensuring the design is mobile-first and adapts to different screen sizes
-- **BEM**: Using Block-Element-Modifier methodology for better CSS organization and maintainability
+  - BEM methodology
+  - CSS custom properties (variables)
+  - Flexbox and CSS Grid
+  - Modal transitions and hover states
 
-In the next portion of my project, I implemented JavaScript. By using Javascript, I was able to make the page even more interactive.
+- **JavaScript (ES6+)** – Functionality and interactivity:
+  - DOM manipulation and event handling
+  - Asynchronous programming with `fetch`, `async/await`, and Promises
+  - Real-time content rendering
+  - Form validation and dynamic input handling
 
-- **JavaScript**: Improve interactivity of the page. The edit modal is now opened when clicked. The form is pre-filled with curent profile information. New profile information is saved when submitted. New posts can be created and added to the page without refreshing. New content is structured properly with all necessary elements.
+### 📱 Responsive Design
 
-## Screenshots
+- Mobile-first layout
+- Media queries for different breakpoints
+- Dynamic scaling for smaller and larger viewports
 
-### Desktop View (1440px)
+### 🔌 API Integration
 
-![Desktop Screenshot](./images/desktop-view.jpg)
+- Fetches and manipulates data using RESTful endpoints
+- Handles asynchronous data updates
+- Displays loading states and handles API errors gracefully
 
-### Mobile View (627px)
+## 🧩 Design Source
 
-![Mobile Screenshot](./images/mobile-view1.jpg)
+- 🎨 [Figma Design File](https://www.figma.com/file/BBNm2bC3lj8QQMHlnqRsga/Sprint-3-Project-%E2%80%94-Spots?type=design&node-id=2%3A60&mode=design&t=afgNFybdorZO6cQo-1)
 
-### Edit Profile with Current Info - Before and After
+## 🚀 Deployment
 
-![Edit Profile Before](./images/edit-profile-info-before.jpg)
-![Edit Profile After](./images/edit-profile-info-after.jpg)
-![Edit Profile Updated](./images/edit-profile-updated.jpg)
+The project is deployed on GitHub Pages:  
+🔗 [Live Site](https://enyberg09.github.io/se_project_spots/)
 
-### New Post with Iamge - Before, During, and After
+## 🛠️ Next Steps
 
-![New Post Before](./images/new-post-before.jpg)
-![New Post During](./images/new-post-during.jpg)
-![New Post After](./images/new-post-after.jpg)
-![New Post Before Like Button](./images/new-post-after-like-button.jpg)
-
-### Spots Functionality Demo
-
-- [Spots Demo](https://photos.app.goo.gl/DB8qWWZDLHhs3dsn9)
-
-## Video Description
-
-- [Video Description Link](https://drive.google.com/file/d/1dnk40vhYClGCO5M5jkFtvc-Ow_wOGXEx/view?usp=sharing)
-
-- [Link to the project on Figma](https://www.figma.com/file/BBNm2bC3lj8QQMHlnqRsga/Sprint-3-Project-%E2%80%94-Spots?type=design&node-id=2%3A60&mode=design&t=afgNFybdorZO6cQo-1)
-
-## Deployment
-
-This webpage is deployed to GitHub pages
-
-- [Deployment link](https://enyberg09.github.io/se_project_spots/)
-
-## Next Steps
-
-- Fine-tuning the layout for tablet devices
-- Enhancing performance and improving cross-browser compatibility
+- Audit accessibility and implement improvements
