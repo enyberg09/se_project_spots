@@ -29,7 +29,6 @@ api
   .then(([cards, userInfo]) => {
     profileNameEl.textContent = userInfo.name;
     profileDescriptionEl.textContent = userInfo.about;
-    console.log(userInfo.avatar);
     profileAvatar.src = userInfo.avatar;
     profileAvatar.src = "https://i.imgur.com/VSN3pTL.jpeg";
 
